@@ -1,0 +1,176 @@
+/* Styles for the GRASS plugin.
+   Uses Obsidian theme CSS variables so we inherit light/dark mode. */
+
+.grass {
+  font-size: var(--font-ui-small);
+  color: var(--text-normal);
+  padding: 0.5em;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 6px;
+  background: var(--background-secondary);
+  line-height: 1.4;
+}
+
+.grass--error .grass__error,
+.grass__error {
+  color: var(--text-error);
+  padding: 0.25em 0;
+  font-family: var(--font-monospace);
+}
+
+.grass--empty {
+  color: var(--text-muted);
+  padding: 0.5em;
+}
+
+.grass__header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+  margin-bottom: 0.75em;
+}
+
+.grass__title {
+  font-size: var(--font-ui-large);
+  font-weight: var(--font-bold);
+  color: var(--text-normal);
+}
+
+.grass__subtitle {
+  color: var(--text-muted);
+  font-family: var(--font-monospace);
+  font-size: var(--font-ui-smaller);
+  word-break: break-all;
+}
+
+.grass__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35em;
+  margin-top: 0.25em;
+}
+
+.grass__chip {
+  display: inline-block;
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: var(--background-modifier-hover);
+  color: var(--text-muted);
+  font-size: var(--font-ui-smaller);
+}
+
+/* "cached" chip stands out so users can tell when they're looking at offline data. */
+.grass__chip--cached {
+  background: var(--background-modifier-border);
+  color: var(--text-accent);
+}
+
+.grass--cached {
+  border-style: dashed;
+}
+
+.grass__missing {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35em;
+  padding: 0.5em;
+}
+
+.grass__missing .grass__title {
+  font-family: var(--font-monospace);
+  font-size: var(--font-ui-small);
+  word-break: break-all;
+}
+
+.grass__section {
+  margin: 0.5em 0;
+  padding: 0.25em 0;
+  border-top: 1px solid var(--background-modifier-border);
+}
+
+.grass__section>summary {
+  cursor: pointer;
+  font-weight: var(--font-semibold);
+  padding: 0.25em 0;
+  color: var(--text-normal);
+  list-style: revert;
+}
+
+.grass__dl {
+  display: grid;
+  grid-template-columns: minmax(8em, max-content) 1fr;
+  gap: 0.15em 1em;
+  margin: 0.25em 0 0 0.5em;
+}
+
+.grass__dl dt {
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.grass__dl dd {
+  margin: 0;
+  font-family: var(--font-monospace);
+  word-break: break-word;
+}
+
+.grass__table {
+  width: 100%;
+  margin-top: 0.5em;
+  border-collapse: collapse;
+  font-size: var(--font-ui-smaller);
+}
+
+.grass__table th,
+.grass__table td {
+  text-align: left;
+  padding: 0.25em 0.5em;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.grass__table th {
+  color: var(--text-muted);
+  font-weight: var(--font-normal);
+}
+
+.grass__num {
+  font-family: var(--font-monospace);
+  text-align: right;
+}
+
+.grass__mapset-name {
+  font-weight: var(--font-semibold);
+}
+
+.grass__mapset {
+  margin: 0.25em 0 0.25em 0.5em;
+  padding: 0.15em 0;
+}
+
+.grass__mapset>summary {
+  cursor: pointer;
+  color: var(--text-muted);
+  padding: 0.15em 0;
+}
+
+.grass__maplist {
+  margin: 0.15em 0 0.25em 1em;
+}
+
+.grass__maplist-label {
+  color: var(--text-muted);
+  font-size: var(--font-ui-smaller);
+  margin-bottom: 0.1em;
+}
+
+.grass__maplist ul {
+  margin: 0;
+  padding-left: 1.25em;
+  font-family: var(--font-monospace);
+  font-size: var(--font-ui-smaller);
+}
+
+.grass__muted {
+  color: var(--text-muted);
+  font-size: var(--font-ui-smaller);
+}
