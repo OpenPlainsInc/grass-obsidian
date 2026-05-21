@@ -1,7 +1,7 @@
 {
   "name": "grass",
   "version": "0.1.0",
-  "description": "Display and summarize GRASS GIS projects in Obsidian.",
+  "description": "Display and summarize GRASS projects in Obsidian.",
   "main": "main.js",
   "scripts": {
     "dev": "node esbuild.config.mjs",

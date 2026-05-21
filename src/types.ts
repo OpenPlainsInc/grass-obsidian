@@ -1,7 +1,7 @@
 /**
  * Shared types for the GRASS project parser and views.
  *
- * Terminology mirrors GRASS GIS:
+ * Terminology mirrors GRASS:
  *   - "project" (formerly "location") = top-level directory; defines a CRS.
  *   - "mapset"                         = sub-directory within a project; a working area.
  *   - PERMANENT                        = mandatory mapset that owns CRS files.

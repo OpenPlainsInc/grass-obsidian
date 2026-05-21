@@ -3,7 +3,7 @@
   "name": "GRASS",
   "version": "0.1.0",
   "minAppVersion": "1.4.0",
-  "description": "Display and summarize GRASS GIS projects (locations) inside notes.",
+  "description": "Display and summarize GRASS projects (locations) inside notes.",
   "author": "Corey White",
   "authorUrl": "https://github.com/cwhite911",
   "isDesktopOnly": false

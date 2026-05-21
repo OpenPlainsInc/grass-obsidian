@@ -1,6 +1,6 @@
 # GRASS
 
-An Obsidian plugin that displays and summarizes [GRASS GIS](https://grass.osgeo.org) projects directly inside your notes.
+An Obsidian plugin that displays and summarizes [GRASS](https://grass.osgeo.org) projects directly inside your notes.
 
 It reads a GRASS project from disk (no GRASS install required), parses the on-disk metadata (`PROJ_INFO`, `PROJ_UNITS`, `PROJ_EPSG`, `WIND`, `DEFAULT_WIND`, `cellhd/*`, `vector/*/head`, …) and renders a clean, theme-aware summary.
 

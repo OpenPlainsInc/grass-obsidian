@@ -7,7 +7,7 @@ Context for Claude Code working in this repo. Read this first.
 ## What this is
 
 An Obsidian plugin (id: `grass`, repo dir: `grass-obsidian`) that displays and summarizes
-[GRASS GIS](https://grass.osgeo.org) projects inside Obsidian notes. It works
+[GRASS](https://grass.osgeo.org) projects inside Obsidian notes. It works
 in two modes:
 
 - **Desktop (Electron, has Node `fs`)**: parses the project directory directly
@@ -17,7 +17,7 @@ in two modes:
   to the device via Obsidian Sync (or any vault sync that includes
   `.obsidian/plugins/grass/`).
 
-The plugin owner (Corey White) is a GRASS GIS core contributor at NC State.
+The plugin owner (Corey White) is a GRASS core contributor at NC State.
 Assume domain literacy on the user side — don't over-explain GRASS concepts in
 code comments, but DO keep links to upstream docs when introducing on-disk
 formats that aren't obvious.
