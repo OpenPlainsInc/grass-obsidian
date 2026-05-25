@@ -1,3 +1,13 @@
+/*!
+ * @fileoverview LRU cache of parsed GRASS project summaries, keyed by the verbatim
+ *   user input path so the same entry resolves identically on desktop and mobile.
+ *   Provides JSON-safe (de)serialization for round-tripping through Obsidian's data.json.
+ * @author OpenPlains Inc.
+ *
+ * Copyright (c) 2026 OpenPlains Inc.
+ * Licensed under the MIT license.
+ */
+
 import type { ProjectSummary } from "./types";
 
 /**

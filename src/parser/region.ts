@@ -1,3 +1,13 @@
+/*!
+ * @fileoverview Parses GRASS region/header blocks (WIND, DEFAULT_WIND, and
+ *   per-raster cellhd files), enforcing required spatial keys and surfacing
+ *   optional 2D/3D fields as a Region value.
+ * @author OpenPlains Inc.
+ *
+ * Copyright (c) 2026 OpenPlains Inc.
+ * Licensed under the MIT license.
+ */
+
 import type { Region } from "../types";
 import { num, int, parseKeyValue } from "./kv";
 

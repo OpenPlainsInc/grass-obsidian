@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "minAppVersion": "1.4.0",
   "description": "Display and summarize GRASS projects (locations) inside notes.",
-  "author": "Corey White",
-  "authorUrl": "https://github.com/cwhite911",
+  "author": "OpenPlains Inc.",
+  "authorUrl": "https://github.com/OpenPlainsInc",
   "isDesktopOnly": false
 }

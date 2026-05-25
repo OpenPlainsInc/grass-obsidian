@@ -1,3 +1,13 @@
+/*!
+ * @fileoverview Mobile-simulation tests. Hoists vi.mock("../src/util/platform")
+ *   so the parser sees `isFilesystemAvailable()` as false, verifying that the
+ *   resolver falls back to cached summaries when fs is unavailable.
+ * @author OpenPlains Inc.
+ *
+ * Copyright (c) 2026 OpenPlains Inc.
+ * Licensed under the MIT license.
+ */
+
 import * as path from "node:path";
 import { describe, expect, it, vi } from "vitest";
 

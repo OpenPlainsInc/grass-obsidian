@@ -1,3 +1,13 @@
+/*!
+ * @fileoverview Generic `key: value` parser shared by every GRASS metadata file
+ *   (PROJ_INFO, WIND, cellhd, vector head, ...). Handles CRLF, comments, and
+ *   numeric coercion so semantic parsers can work over Record<string, string>.
+ * @author OpenPlains Inc.
+ *
+ * Copyright (c) 2026 OpenPlains Inc.
+ * Licensed under the MIT license.
+ */
+
 /**
  * GRASS metadata files (PROJ_INFO, WIND, cellhd, vector head, ...) all use
  * a simple "key: value" line-oriented format. Some files have leading/trailing

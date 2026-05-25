@@ -1,3 +1,13 @@
+/*!
+ * @fileoverview Parser tests over the synthetic NC State Plane fixture. Covers
+ *   key/value parsing, region parsing, projection metadata, mapset scanning,
+ *   raster/vector header reads, and the top-level parseProject orchestration.
+ * @author OpenPlains Inc.
+ *
+ * Copyright (c) 2026 OpenPlains Inc.
+ * Licensed under the MIT license.
+ */
+
 import { describe, expect, it } from "vitest";
 import * as path from "node:path";
 import * as fs from "node:fs";

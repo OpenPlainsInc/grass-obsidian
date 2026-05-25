@@ -1,3 +1,13 @@
+/*!
+ * @fileoverview Unit tests for the project cache: insertion ordering, LRU
+ *   eviction at MAX_CACHE_ENTRIES, key normalization, defensive deserialization,
+ *   and JSON round-trip safety.
+ * @author OpenPlains Inc.
+ *
+ * Copyright (c) 2026 OpenPlains Inc.
+ * Licensed under the MIT license.
+ */
+
 import { describe, expect, it } from "vitest";
 import {
   MAX_CACHE_ENTRIES,

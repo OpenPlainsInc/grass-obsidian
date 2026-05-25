@@ -1,3 +1,13 @@
+/*!
+ * @fileoverview Pure DOM renderers shared by the code-block processor and the
+ *   right-pane view. Produces project summary, error, and missing-state markup
+ *   using only standard DOM APIs + Obsidian theme CSS variables for theming.
+ * @author OpenPlains Inc.
+ *
+ * Copyright (c) 2026 OpenPlains Inc.
+ * Licensed under the MIT license.
+ */
+
 import type { MapsetSummary, ProjectSummary, Region, ProjInfo } from "../types";
 
 /** Optional rendering context that view callers pass in. */

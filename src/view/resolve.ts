@@ -1,3 +1,13 @@
+/*!
+ * @fileoverview Central live/cache/missing decision for project references.
+ *   Attempts a fresh on-disk parse when fs is available (updating the cache on
+ *   success), otherwise falls back to a cache lookup keyed by the verbatim input.
+ * @author OpenPlains Inc.
+ *
+ * Copyright (c) 2026 OpenPlains Inc.
+ * Licensed under the MIT license.
+ */
+
 import { parseProject } from "../parser";
 import { getCached, setCached, type CachedProject, type ProjectCacheState } from "../cache";
 import { GrassParseError, type ProjectSummary } from "../types";

@@ -1,3 +1,14 @@
+/*!
+ * @fileoverview Platform abstraction for Node built-ins. Lazy-loads `fs`,
+ *   `path`, and `os` via try/catch require so Obsidian mobile (where those
+ *   modules don't exist) doesn't crash at module load. The rest of the plugin
+ *   must use these helpers instead of touching Node built-ins directly.
+ * @author OpenPlains Inc.
+ *
+ * Copyright (c) 2026 OpenPlains Inc.
+ * Licensed under the MIT license.
+ */
+
 /**
  * Platform abstraction for Node built-ins.
  *

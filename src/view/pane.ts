@@ -1,3 +1,13 @@
+/*!
+ * @fileoverview Right-pane ItemView that auto-summarizes the GRASS project linked
+ *   from the active note's frontmatter (`grass`, `grass_project`, or `grassProject`).
+ *   Re-renders on file/metadata changes and exposes refresh() for the command palette.
+ * @author OpenPlains Inc.
+ *
+ * Copyright (c) 2026 OpenPlains Inc.
+ * Licensed under the MIT license.
+ */
+
 import { ItemView, type TFile, type WorkspaceLeaf, type App } from "obsidian";
 import type { ProjectCacheState } from "../cache";
 import { isAbsoluteLike, resolveProjectPath } from "../util/path";

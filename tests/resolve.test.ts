@@ -1,3 +1,13 @@
+/*!
+ * @fileoverview Tests for resolveProject's live/cache/missing decision tree
+ *   against the real fixture and a fake nonexistent path. Verifies live reads
+ *   overwrite the cache and that cache reads never write back.
+ * @author OpenPlains Inc.
+ *
+ * Copyright (c) 2026 OpenPlains Inc.
+ * Licensed under the MIT license.
+ */
+
 import * as path from "node:path";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { emptyCache, setCached } from "../src/cache";

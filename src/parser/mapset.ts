@@ -1,3 +1,13 @@
+/*!
+ * @fileoverview Mapset-level scanner. Enumerates rasters, vectors, 3D rasters,
+ *   and imagery groups from a GRASS mapset's on-disk layout, and exposes
+ *   readRasterInfo / readVectorInfo for per-map header detail.
+ * @author OpenPlains Inc.
+ *
+ * Copyright (c) 2026 OpenPlains Inc.
+ * Licensed under the MIT license.
+ */
+
 import type { MapsetSummary, RasterInfo, RasterType, Region, VectorInfo } from "../types";
 import { listDir, pathBasename, pathJoin, readTextFile, statSafe } from "../util/platform";
 import { int, parseKeyValue } from "./kv";

@@ -1,3 +1,13 @@
+/*!
+ * @fileoverview Shared type contract between the parser, cache, and views.
+ *   Declares ProjectSummary, MapsetSummary, Region, ProjInfo, raster/vector
+ *   metadata shapes, and the GrassParseError class. All types are JSON-safe.
+ * @author OpenPlains Inc.
+ *
+ * Copyright (c) 2026 OpenPlains Inc.
+ * Licensed under the MIT license.
+ */
+
 /**
  * Shared types for the GRASS project parser and views.
  *

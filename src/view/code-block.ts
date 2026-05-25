@@ -1,3 +1,13 @@
+/*!
+ * @fileoverview Markdown code-block processor for ` ```grass ` blocks. Parses
+ *   either a YAML `path:` field or a bare path body, resolves it against the
+ *   configured grassdata root, and dispatches to the live/cache/missing renderer.
+ * @author OpenPlains Inc.
+ *
+ * Copyright (c) 2026 OpenPlains Inc.
+ * Licensed under the MIT license.
+ */
+
 import { parseYaml } from "obsidian";
 import type { ProjectCacheState } from "../cache";
 import { isAbsoluteLike, resolveProjectPath } from "../util/path";

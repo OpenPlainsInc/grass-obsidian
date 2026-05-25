@@ -1,3 +1,13 @@
+/*!
+ * @fileoverview Obsidian plugin entry point. Registers the `grass` code-block
+ *   processor, the right-pane GRASS view, ribbon icon, commands, and settings tab,
+ *   and owns the in-memory cache + settings persisted through Plugin.saveData().
+ * @author OpenPlains Inc.
+ *
+ * Copyright (c) 2026 OpenPlains Inc.
+ * Licensed under the MIT license.
+ */
+
 import { Plugin } from "obsidian";
 import { emptyCache, loadCache, type ProjectCacheState } from "./cache";
 import { DEFAULT_SETTINGS, GrassProjectSettingTab, type GrassProjectSettings } from "./settings";

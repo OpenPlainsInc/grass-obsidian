@@ -1,3 +1,13 @@
+/*!
+ * @fileoverview User-facing settings — interface, defaults, and Obsidian
+ *   PluginSettingTab UI for configuring the default grassdata root used to
+ *   resolve bare project names from code blocks and frontmatter.
+ * @author OpenPlains Inc.
+ *
+ * Copyright (c) 2026 OpenPlains Inc.
+ * Licensed under the MIT license.
+ */
+
 import { PluginSettingTab, Setting, type App } from "obsidian";
 import type GrassProjectPlugin from "./main";
 

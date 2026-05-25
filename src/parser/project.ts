@@ -1,3 +1,13 @@
+/*!
+ * @fileoverview Top-level GRASS project parser. Validates project layout
+ *   (PERMANENT + DEFAULT_WIND), reads projection metadata, enumerates mapsets
+ *   with PERMANENT sorted first, and assembles the canonical ProjectSummary.
+ * @author OpenPlains Inc.
+ *
+ * Copyright (c) 2026 OpenPlains Inc.
+ * Licensed under the MIT license.
+ */
+
 import { GrassParseError, type ProjectSummary } from "../types";
 import {
   isFilesystemAvailable,

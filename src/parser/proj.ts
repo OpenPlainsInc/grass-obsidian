@@ -1,3 +1,13 @@
+/*!
+ * @fileoverview Projection metadata reader. Merges PROJ_INFO, PROJ_UNITS, and
+ *   PROJ_EPSG from a project's PERMANENT mapset into a single ProjInfo struct,
+ *   returning an empty info for XY / unprojected projects rather than throwing.
+ * @author OpenPlains Inc.
+ *
+ * Copyright (c) 2026 OpenPlains Inc.
+ * Licensed under the MIT license.
+ */
+
 import type { ProjInfo } from "../types";
 import { pathJoin, readTextFile } from "../util/platform";
 import { num, parseKeyValue } from "./kv";

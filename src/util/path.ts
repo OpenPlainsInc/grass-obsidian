@@ -1,3 +1,13 @@
+/*!
+ * @fileoverview Path helpers built atop the platform wrapper — tilde expansion,
+ *   project-path resolution, and absolute-path detection — that degrade gracefully
+ *   on mobile where `os` and `path` are unavailable.
+ * @author OpenPlains Inc.
+ *
+ * Copyright (c) 2026 OpenPlains Inc.
+ * Licensed under the MIT license.
+ */
+
 import { homedir, pathJoin, pathResolve } from "./platform";
 
 /**
