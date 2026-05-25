@@ -1,6 +1,6 @@
 {
   "name": "grass",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Display and summarize GRASS projects in Obsidian.",
   "main": "main.js",
   "scripts": {
