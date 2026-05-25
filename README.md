@@ -39,14 +39,14 @@ Once published: *Settings → Community plugins → Browse*, search for "GRASS",
 ### Beta install via BRAT
 
 1. Install the [BRAT](https://github.com/TfTHacker/obsidian42-brat) plugin from the community catalog.
-2. *Settings → BRAT → Add Beta plugin* → paste this repo URL.
+2. *Settings → BRAT → Add Beta plugin* → paste `OpenPlainsInc/grass-obsidian` (or the full `https://github.com/OpenPlainsInc/grass-obsidian` URL).
 3. Enable **GRASS** under *Settings → Community plugins*.
 
 ### Manual / development install
 
 ```bash
-git clone https://github.com/<you>/grass
-cd grass
+git clone https://github.com/OpenPlainsInc/grass-obsidian
+cd grass-obsidian
 npm install
 npm run build
 ```
